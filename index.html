@@ -54,10 +54,7 @@
         .grid-item {
             background: white;
             border-radius: 8px;
-            padding: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: 1rem;
             font-size: 1.5rem;
             color: #666;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -122,6 +119,7 @@
                         if(a.info.iucn.value == "Vulnerable(UV)"){
                             
                     grid.innerHTML += `<div class="grid-item"><img src="${a.image.url.replace("http://www.buscaves.cl/","https://buscaves.cl/")}"/><P>${a.names.spanish}</p></div>`
+                        </p>small>${a.names.latin}</small></div>
                 })
                 
             }
